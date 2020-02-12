@@ -16,7 +16,10 @@ public class Staircase {
         for(int i=1; i<=n;i++){
             spaceRepeated = String.join("", Collections.nCopies(n-i, " "));
             hashtagRepeated = String.join("", Collections.nCopies(i, "#"));
-            result.append(spaceRepeated).append(hashtagRepeated).append("\n");
+            result.append(spaceRepeated).append(hashtagRepeated);
+            if(i<n){
+                result.append("\n");
+            }
         }
 
         return result.toString();
