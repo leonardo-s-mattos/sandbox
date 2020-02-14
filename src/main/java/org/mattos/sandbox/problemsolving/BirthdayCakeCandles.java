@@ -9,10 +9,10 @@ public class BirthdayCakeCandles {
 
         long result = 0;
 
-        Long maxHeight = Arrays.stream(givenCandlesHeights).mapToLong(v->v).max().getAsLong();
+        int maxHeight = Arrays.stream(givenCandlesHeights).map(v->v).max().getAsInt();
 
         result = Arrays.stream(givenCandlesHeights)
-                .mapToLong(v->v).filter(candleHeight -> maxHeight.equals(candleHeight)).count();
+                .map(v->v).filter(candleHeight -> maxHeight==candleHeight).count();
 
         return result;
     }
