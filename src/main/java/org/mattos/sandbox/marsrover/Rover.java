@@ -77,7 +77,7 @@ public class Rover {
     }
 
     private boolean facing( String direction) {
-        return cardinal.equals(direction);
+        return cardinal.name().equals(direction);
     }
 
 }

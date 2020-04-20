@@ -40,7 +40,7 @@ public class Plateau {
     }
 
     private String formatCoordinate() {
-        return String.format(COORDINATE_FORMAT, rover.getX(), rover.getY(), rover.getCardinal());
+        return String.format(COORDINATE_FORMAT, rover.getX(), rover.getY(), rover.getCardinal().name());
     }
 
 
