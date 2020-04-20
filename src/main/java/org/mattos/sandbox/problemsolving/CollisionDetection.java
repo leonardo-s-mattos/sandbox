@@ -4,7 +4,7 @@ import java.util.List;
 
 public class CollisionDetection {
 
-    public static int collision(List<Integer> speed, int pos) {
+    public int detect(List<Integer> speed, int pos) {
 
         Integer mySpeed = speed.get(pos);
 
