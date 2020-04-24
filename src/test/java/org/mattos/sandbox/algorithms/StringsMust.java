@@ -41,4 +41,37 @@ public class StringsMust {
         String[] actual = new Strings().findStrings(givenArray.toArray(new String[0]), new int[]{queries});
         assertThat(actual[0], is(invalidMessage));
     }
+
+    @ParameterizedTest
+    @CsvSource({"'aab', 'b'",
+                "'baab', 'Empty String'",
+                "'aaabccddd', 'abd'"})
+    void reduceGivenStringToSmallerSize_includingJustUniqueCharacters(String givenString, String expectedReduction){
+
+        String actual = new Strings().superReducedString(givenString);
+        assertThat(actual, is(expectedReduction));
+    }
+
+    @ParameterizedTest
+    @CsvSource({"'saveChangesInTheEditor', 5",
+            "'baab', 1",
+            "'',0"})
+    void countWordsOnGivenCamelCasedString(String givenString, int expectedWordCount){
+
+        int actual = new Strings().camelcase(givenString);
+        assertThat(actual, is(expectedWordCount));
+    }
+
+
+    @ParameterizedTest
+    @CsvSource({"3, 'Ab1', 3",
+            "11,'#HackerRank', 1",
+            "0,'',6",
+            "4, '4700', 3",
+            "7, 'AUzs-nV', 1"})
+    void suggestModificationsOnGivenPassword_toMakeItStrong(int size, String givenString, int expectedNumberOfExtraChars){
+
+        int actual = new Strings().minimumNumber(size, givenString);
+        assertThat(actual, is(expectedNumberOfExtraChars));
+    }
 }
