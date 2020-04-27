@@ -74,4 +74,16 @@ public class StringsMust {
         int actual = new Strings().minimumNumber(size, givenString);
         assertThat(actual, is(expectedNumberOfExtraChars));
     }
+
+    @ParameterizedTest
+    @CsvSource({"'SOSSPSSQSSOR', 3",
+            "'SOSSOT', 1",
+            "'SOSSOSSOS',0"})
+    void exploreMars_andCipherTheMessageSentEarth(String givenString, int expectedNumberChanges){
+
+        int actual = new Strings().marsExploration(givenString);
+        assertThat(actual, is(expectedNumberChanges));
+    }
+
+
 }

@@ -99,4 +99,22 @@ public class Strings {
         Matcher matcher = pattern.matcher(original);
         return matcher.find() ;
     }
+
+    // Complete the marsExploration function below.
+    public int marsExploration(String s) {
+
+        int numberOfSOS = s.length()/3;
+        int modifications = 0;
+        for (int i = 0; i < numberOfSOS; i++) {
+            String message = s.substring(3*i, (3*i)+3);
+            if(!"SOS".equals(message)){
+                String[] letters = message.split("");
+                if(!letters[0].equals("S")) modifications++;
+                if(!letters[1].equals("O")) modifications++;
+                if(!letters[2].equals("S")) modifications++;
+            }
+        }
+
+        return modifications;
+    }
 }
