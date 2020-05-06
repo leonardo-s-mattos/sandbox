@@ -77,3 +77,4 @@ target/classes/META-INF/sandbox.kotlin_module
 .idea/libraries/Maven__org_hamcrest_hamcrest_all_1_3.xml
 .idea/compiler.xml
 .DS_Store
+target/test-classes/org/mattos/sandbox/problemsolving/CollisionDetectionShould.class
