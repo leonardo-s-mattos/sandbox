@@ -1,4 +1,4 @@
-package org.mattos.sandbox.algorithms.string;
+package org.mattos.sandbox.algorithms.strings;
 
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -6,7 +6,6 @@ import static org.hamcrest.Matchers.is;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.mattos.sandbox.algorithms.strings.WeightedUniformStrings;
 import org.mattos.sandbox.util.IntegerCollectionsConverter;
 import org.mattos.sandbox.util.StringCollectionsConverter;
 

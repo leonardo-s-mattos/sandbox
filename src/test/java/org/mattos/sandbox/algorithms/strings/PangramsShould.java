@@ -1,12 +1,10 @@
-package org.mattos.sandbox.algorithms.string;
+package org.mattos.sandbox.algorithms.strings;
 
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-
-import org.mattos.sandbox.algorithms.strings.Pangrams;
 
 
 public class PangramsShould {

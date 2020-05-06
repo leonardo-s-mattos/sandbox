@@ -1,10 +1,8 @@
-package org.mattos.sandbox.algorithms.string;
+package org.mattos.sandbox.algorithms.strings;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.mattos.sandbox.algorithms.strings.FunnyString;
-import org.mattos.sandbox.algorithms.strings.Gemstones;
 import org.mattos.sandbox.util.StringCollectionsConverter;
 
 import java.util.List;
