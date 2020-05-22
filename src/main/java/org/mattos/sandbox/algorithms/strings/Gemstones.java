@@ -22,6 +22,7 @@ public class Gemstones {
         }
 
         return gemCount;
+
     }
 
 }
