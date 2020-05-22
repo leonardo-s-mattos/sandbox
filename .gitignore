@@ -78,3 +78,6 @@ target/classes/META-INF/sandbox.kotlin_module
 .idea/compiler.xml
 .DS_Store
 target/test-classes/org/mattos/sandbox/problemsolving/CollisionDetectionShould.class
+target/classes/org/mattos/sandbox/codesignal/Aditi.class
+target/test-classes/org/mattos/sandbox/codesignal/AditiMust.class
+target/test-classes/org/mattos/sandbox/problemsolving/CollisionDetectionShould.class
